@@ -27,6 +27,7 @@
     "html-webpack-plugin": "2.29.0",
     "immutability-helper": "^2.5.1",
     "jest": "20.0.4",
+    "material-ui": "^0.19.4",
     "mathjs": "^3.17.0",
     "mdi-material-ui": "^2.0.1",
     "object-assign": "4.1.1",

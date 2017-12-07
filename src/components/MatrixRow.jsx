@@ -32,7 +32,8 @@ class MatrixRow extends Component {
         <td>
           <TextField
             style={textFieldStyle}
-            defaultValue={this.props.row == i ? 1 : 0}
+            defaultValue={this.props.row === i ? 1 : 0}
+            id = {this.props.row + "," + i}
             onChange={(e, newValue) =>
               this.props.onChange(e, newValue, {
                 row: this.props.row,
