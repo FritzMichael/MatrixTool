@@ -12,7 +12,8 @@ const textFieldInputStyle = {
 };
 
 const mapStateToProps = state => ({
-  columns: state.matrixActions.columns
+  columns: state.matrixActions.columns,
+  matrix: state.matrixActions.matrix
 });
 
 const mapDispatchToProps = dispatch => {
@@ -32,8 +33,8 @@ class MatrixRow extends Component {
         <td>
           <TextField
             style={textFieldStyle}
-            defaultValue={this.props.row === i ? 1 : 0}
-            id = {this.props.row + "," + i}
+            value={this.props.matrix[this.props.row][i]}
+            id={this.props.row + "," + i}
             onChange={(e, newValue) =>
               this.props.onChange(e, newValue, {
                 row: this.props.row,
